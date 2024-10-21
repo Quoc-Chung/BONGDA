@@ -1,0 +1,32 @@
+/* ------ common products-------- */
+  .common-products {
+    padding-top: 30px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+  .list-product .card{
+    padding-top: 10px;
+    margin: 10px 0 !important;
+  }
+  .list-product .card span{
+    font-weight: bold;
+  }
+  .list-product .card a{
+    color: var(--gray) !important;
+  }
+  .list-product img{
+    width: 80% !important;
+    margin: 0 auto !important;
+    transition: all .3s ;
+  }
+  .list-product img:hover{
+    transform: translateY(-5px);
+  }
+
+  
+ 

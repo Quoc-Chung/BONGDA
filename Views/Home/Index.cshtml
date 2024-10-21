@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Trandau>
+@foreach (var item in Model)
+{
+    <div class="col l-3 m-m-b-20 c-12">
+        <div class="place__item">
+            <div class="place__bg">
+                <img src="@Url.Content("../BONGDA/"+ item.Anh+".jpg")" alt="" class="place__img">   
+            </div>
+            <div class="place__info" style="padding: 0; text-align:center ">
+                <header class="place__header">
+                    <h3 class="place__heading">@item.TranDauId</h3>
+                    <p class="place__location">
+                        <i class="ri-map-pin-line"></i>@item.SanVanDong
+                    </p>
+                </header>
+                <div class="place__price" style="padding: 20px;">
+                    <div class="place__price-right">
+                        <span class="" style="color: red; font-size: 23px; padding: 10px;">@item.Vong</span>
+                        <span class="place__price-current">@item.KetQua</span>
+                    </div>
+                </div>
+                <footer class="place__footer">
+                    <a href="" class="place__btn bg__color--berlin">Chi tiết</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+}

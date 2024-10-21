@@ -1,0 +1,72 @@
+
+/*---search---*/
+
+.search-text{
+    width: 30%;
+    height: 40px;
+    background-color: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.search-text input{
+    height: 38px;
+    width: 85%;
+    border: none;
+    padding-left: 10px;
+}
+.search-btn{
+    float: right;
+    width: 15%;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.search-text input:focus, .search-text input:active, .search-text input{
+    outline: 0;
+    outline-style:  none;
+    outline-width: 0;
+    border-radius: 10px 0px 0px 10px;
+}
+
+/*......*/
+.slider{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.slider_imgs{
+    display: flex;
+}
+.slider_imgs input{
+    display: none;
+}
+.lableslider{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;  
+}
+.lableslider label{
+    height: 15px;
+    width: 15px;
+    border-radius: 30px;
+    border: 2px solid black;
+    margin: 2px;
+}
+.lableslider label:hover{
+    background:black ;
+}
+#img1:checked ~.imgslider1{
+    margin-left: -100%;
+}
+#img2:checked ~.imgslider2{
+    margin-left: -200%;
+
+}
+#img3:checked ~.imgslider3{
+    margin-left: -300%;
+
+}
+
+   
+

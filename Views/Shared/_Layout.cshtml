@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../LapTop/assets/css/header.css">
+    <link rel="stylesheet" href="../LapTop/assets/css/base.css">
+    <link rel="stylesheet" href="../LapTop/assets/css/grid.css">
+    <link rel="stylesheet" href="../LapTop/assets/css/style.css">
+    <link rel="stylesheet" href="../LapTop/assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="../LapTop/assets/css/all.min.css">
+    <script src='../LapTop/assets/js/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Laptop Hoàng Phong</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <nav class="navbar">
+                <div class="grid wide">
+                    <nav class="nav row">
+                        <div class="col l-2 m-6 c-6">
+                            <div class="header__logo">
+                                <a href="">
+                                    <img src="../LapTop/assets/img/logo.png" alt="" class="header__logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-8 m-0 c-0">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="" class="nav__item-link">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__item-link">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="" class="nav__item-link">Laptop </a>
+                                    <ul class="subnav">
+                                        @foreach (var item in ViewBag.TenCauThu)
+                                        {
+                                            <li class="subnav__item">
+                                                <a style="cursor:pointer" onclick="showTranDau('@item.CauThuId')" class="subnav__item-link">@item.HoVaTen</a>
+                                            </li>
+                                           
+                                        }
+                                    </ul>
+                                </li>
+                                <li class="nav__item">
+                                    <a asp-controller="Home" asp-action="ThemTranDauMoi" class="nav__item-link">Linh kiện</a>
+                                    <ul class="subnav">
+                                        <li class="subnav__item">
+                                            <a href="" class="subnav__item-link">RAM</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="" class="subnav__item-link">Ổ cứng</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="" class="subnav__item-link">Màn Hình</a>
+                                        </li>
+                                        <li class="subnav__item">
+                                            <a href="" class="subnav__item-link">Pin, Sạc</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="search-text">
+                                <input type="search" name="Tìm kiếm" placeholder="Tìm kiếm của bạn..">
+                                <a href="" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                        <div class="GioHang" style="color: white; font-size: 30px; padding-left: 30px;">
+                            <a href="" class="nav__item-link"><i class="fa-brands fa-opencart"></i></a>
+
+                        </div>
+                        <div class="login" style="color: white; font-size: 30px; padding-left: 30px;">
+                            <a href="" class="nav__item-link"><i class='fas fa-user-circle'></i></a>
+
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </header>
+    </main>
+    
+    <script>
+        function showTranDau(cauthuID) {
+            // Tạo URL dựa trên cauthuID
+            console.log("Hàm showTranDau đã được gọi với mã cầu thủ: " + cauthuID); // Log để kiểm tra
+
+            var getUrl = `https://localhost:7172/api/HomeAPI/${cauthuID}`;
+
+            console.log("URL được gọi: " + getUrl); // Log URL kiểm tra
+            $.ajax({
+                url: getUrl,  // Gọi API từ server
+                type: 'GET',
+                success: function (data) {
+                    console.log("Dữ liệu trả về:", data);  // Kiểm tra dữ liệu trả về từ API
+
+                    var str = "";
+                    $.each(data, function (index, val) {
+                        var imageUrl = `/BONGDA/${val.anh}.jpg`;  // Tạo URL hình ảnh
+                        str += `
+                                <div class="col l-3 m-m-b-20 c-12">
+                                    <div class="place__item">
+                                        <div class="place__bg">
+                                            <img src="${imageUrl}" alt="" class="place__img">
+                                        </div>
+                                        <div class="place__info" style="padding: 0; text-align:center">
+                                            <header class="place__header">
+                                                <h3 class="place__heading">${val.tranDauId}</h3>
+                                                <p class="place__location">
+                                                    <i class="ri-map-pin-line"></i>${val.sanVanDong}
+                                                </p>
+                                            </header>
+                                            <div class="place__price" style="padding: 20px;">
+                                                <div class="place__price-right">
+                                                    <span class="" style="color: red; font-size: 23px; padding: 10px;">${val.vong}</span>
+                                                    <span class="place__price-current">${val.ketQua}</span>
+                                                </div>
+                                            </div>
+                                            <footer class="place__footer">
+                                                <a href="#" class="place__btn bg__color--berlin">Chi tiết</a>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>`;
+                    });
+
+                    $('#displayProducts').html(str);  // Hiển thị sản phẩm trong div với id 'displayProducts'
+                },
+                error: function () {
+                    alert("Có lỗi xảy ra khi tải trận đấu.");
+                }
+            });
+        }
+    </script>
+
+
+    <div class="slider" style="box-sizing:border-box;">
+        <div class="slider_imgs">
+            <input type="radio" name="inputslider" id="img1">
+            <input type="radio" name="inputslider" id="img2">
+            <img src="../LapTop/Images/slide1.png" alt="img1" class="imgslider1">
+            <img src="../LapTop/Images/slide2.png" alt="img2" class="imgslider2">
+            <img src="../LapTop/Images/slide3.png" alt="img2" class="imgslider3">
+        </div>
+        <div class="lableslider">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+        </div>
+    </div>
+
+
+    <div style="text-align: center;">
+        <h2 class="place__btn bg__color--hongkong">
+            Sản phẩm bán chạy
+        </h2>
+    </div>
+
+    <div class="container">
+        <div class="package-menu m-b-60">
+
+            <div id="displayProducts" class="row">
+                 @RenderBody()
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="footer__inner ">
+            <div class="row ">
+                <div class="col l-6 m-12 c-12 ">
+                    <img src="../LapTop/assets/img/logo-color.png " alt=" " class="footer__logo ">
+                    <p class="footer__desc ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh condimentum venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
+                    </p>
+                    <div class="footer__social ">
+                        <a href=" " class="footer__social-link ">
+                            <i class="footer__icon ri-twitter-fill "></i>
+                        </a>
+                        <a href=" " class="footer__social-link ">
+                            <i class="footer__icon ri-youtube-fill "></i>
+                        </a>
+                        <a href=" " class="footer__social-link ">
+                            <i class="footer__icon ri-facebook-box-fill "></i>
+                        </a>
+                        <a href=" " class="footer__social-link ">
+                            <i class="footer__icon ri-vimeo-fill "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col l-2 m-4 c-12 ">
+                    <h4 class="footer__list-heading ">Hỗ trợ - Dịch vụ</h4>
+                    <ul class="footer__list ">
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Mua bán trả góp
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Chính sách bảo hành
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i>Chính sách bảo mật
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Tra cứu đơn hàng
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="col l-2 m-4 c-12 ">
+                    <h4 class="footer__list-heading ">Thông tin </h4>
+                    <ul class="footer__list ">
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Giới thiệu
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Chăm sóc khách hàng
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Hỗ trợ kỹ thuật
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Hỗ trợ Bảo hành
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-4 c-12 ">
+                    <h4 class="footer__list-heading ">Địa chỉ</h4>
+                    <ul class="footer__list ">
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Chi nhánh 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Chi nhánh 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Chi nhánh 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" " class="footer__item ">
+                                <i class="ri-arrow-right-s-line "></i> Chi nhánh 4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

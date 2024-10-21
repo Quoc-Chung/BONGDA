@@ -1,0 +1,26 @@
+﻿ [Route("ThemTranDauMoi")]
+        [HttpGet]
+
+        public IActionResult ThemTranDauMoi()
+        {
+
+            ViewBag.TenTranDau = db.TranDaus.Take(7).ToList();
+            return View();
+        }
+
+        [Route("ThemTranDauMoi")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ThemTranDauMoi(TranDau TranDau)
+        {
+            /*- == true thì chứng tỏ dứ liệu truyền từ form vào hợp lệ -*/
+            if (ModelState.IsValid)
+            {
+                db.Add(TranDau);
+                db.SaveChanges();
+                return RedirectToAction("Index"); // Chuyển hướng về trang danh sách
+            }
+            var list_TranDau = db.Trandaus.ToList();
+            ViewBag.TenNgonNgu = db.TNgonNgus.ToList();
+            return View();
+        }
