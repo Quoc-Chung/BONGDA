@@ -1,0 +1,14 @@
+﻿/*- Hiển thị các trận đấu của các câu lạc bộ có mã la 101-*/
+            var list_TranDau = db.Trandaus.Where(x => x.Clbkhach=="101" || x.Clbnha=="101").Take(7).ToList();
+
+            <img src="@Url.Content("../BONGDA/"+ item.Anh+".jpg")" alt="" class="place__img">  
+            
+
+/*- Hiển thị list cầu thủ ở câu lạc bộ Arsenal => mã 104 -*/
+            var list_CauThu = db.Cauthus.Where(x => x.CauLacBoId == "104").Take(7).ToList();
+
+            <img src="@Url.Content("../BONGDA/"+ item.Anh)" alt="" class="place__img">   
+
+
+/* - Hiển thị huấn luyện viên của các câu lạc bộ - */ 
+            

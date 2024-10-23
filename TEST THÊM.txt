@@ -1,1 +1,67 @@
-- COMMIT LẦN 2
+
+        [Route("SuaTranDau")]
+        /*- Tạo một cái trang đưa dữ liệu lên - */
+        [HttpGet]
+        public IActionResult SuaTranDau(String maTranDau)
+        {
+
+            ViewBag.MaLoai = new SelectList(db.TLoaiTranDaues.ToList(), "MaLoai", "TenLoai");
+            ViewBag.MaNgonNgu = new SelectList(db.TNgonNgus.ToList(), "MaNgonNgu", "TenNgonNgu");
+            ViewBag.MaNxb = new SelectList(db.TNhaXbs.ToList(), "MaNxb", "TenNxb");
+            var TranDau = db.TTranDaues.Find(maTranDau);
+            /*- HIỆN NÓ LÊN BẰNG CÁCH RETURN VỀ VIEW SẢN PHẨM -*/
+            ViewBag.TenNgonNgu = db.TNgonNgus.ToList();
+            return View(TranDau);
+        }
+       [Route("SuaTranDau")]
+      /*- Tạo một cái trang đưa dữ liệu lên - */
+       [HttpPost]
+        /* - Kiểm tra dữ liệu nhập vào có chính xác với quy định về validation không  -*/
+        [ValidateAntiForgeryToken]
+        public IActionResult SuaTranDau(TTranDau TranDau)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Update(TranDau);
+                db.SaveChanges();
+                /* - SAU KHI TẠO MỚI XONG SẼ CHUYỂN SANG DANH MụC SẢN PHẨM -*/
+                return RedirectToAction("Index", "Home");
+            }
+            ViewBag.TenNgonNgu = db.TNgonNgus.ToList();
+            /* - NẾU NHẬP KHÔNG CHÍNH XÁC THÌ CÓ THỂ NHẬP LẠI ĐỂ TẠO CÁI VIEW CHO HỌ CÓ THỂ NHẬP LẠI -*/
+            return View(TranDau);
+        }
+
+
+
+        /*- Xóa sách thì chúng ta sẽ phải cần mã sách -*/
+        [Route("XoaTranDau")]
+        [HttpGet]
+        public IActionResult XoaTranDau(string MaTranDau)
+        {
+            TempData["Message"] = "";
+            var list_TranDau = db.TTranDaues.ToList();
+            ViewBag.TenNgonNgu = db.TNgonNgus.ToList();
+            // Kiểm tra chi tiết sản phẩm trước khi xóa
+            var chiTietTranDauTonTai = db.TBanSaoTranDaues.Any(x => x.MaTranDau == MaTranDau);
+            if (chiTietTranDauTonTai)
+            {
+                TempData["Message"] = "Không xóa được sản phẩm này vì có chi tiết sản phẩm liên quan.";
+                return RedirectToAction("Index", "Home");
+            }
+
+            // Xóa sản phẩm trong bảng TDanhMucSps
+            var TranDau = db.TTranDaues.Find(MaTranDau);
+            if (TranDau != null)
+            {
+                db.Remove(TranDau);
+                db.SaveChanges();
+                TempData["Message"] = "Sản phẩm đã được xóa.";
+            }
+            else
+            {
+                TempData["Message"] = "Sản phẩm không tồn tại.";
+            }
+
+            return RedirectToAction("Index", "Home");
+        }

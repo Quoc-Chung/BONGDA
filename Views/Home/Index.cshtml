@@ -4,7 +4,7 @@
     <div class="col l-3 m-m-b-20 c-12">
         <div class="place__item">
             <div class="place__bg">
-                <img src="@Url.Content("../BONGDA/"+ item.Anh+".jpg")" alt="" class="place__img">   
+                <img src="@Url.Content("../BONGDA/"+ item.Anh+".jpg")" alt="" class="place__img">
             </div>
             <div class="place__info" style="padding: 0; text-align:center ">
                 <header class="place__header">
@@ -20,7 +20,10 @@
                     </div>
                 </div>
                 <footer class="place__footer">
-                    <a href="" class="place__btn bg__color--berlin">Chi tiết</a>
+                    <a asp-controller="Home" asp-action="ThemTranDauMoi" class="place__btn bg__color--berlin">THÊM</a>
+                    <a asp-controller="Home" asp-action="SuaTranDau" asp-route-maTranDau="@item.TranDauId" class="place__btn bg__color--berlin">SỬA</a>
+                    <a asp-controller="Home" asp-action="XoaTranDau" asp-route-trandauID="@item.TranDauId" class="place__btn bg__color--berlin">XÓA</a>
+                 
                 </footer>
             </div>
         </div>
