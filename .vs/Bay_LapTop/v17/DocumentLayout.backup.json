@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\views\\home\\themtrandaumoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:views\\home\\themtrandaumoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\views\\home\\themtrandaumoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:views\\home\\themtrandaumoi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\cac dang hien thi.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:cac dang hien thi.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\views\\home\\suatrandau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:views\\home\\suatrandau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|d:\\ki_mot_nam_ba\\lap_trinh_web\\ki\u1EC3m tra gi\u1EEFa k\u00EC\\luyettapthem\\bay_laptop\\truyxuatcosodulieu.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{99780CBA-0B0A-4D88-8807-8553DA7332C6}|Bay_LapTop.csproj|solutionrelative:truyxuatcosodulieu.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,6 +73,74 @@
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAuwIgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:26:01.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T19:40:19.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThemTranDauMoi.cshtml",
+              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\ThemTranDauMoi.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ThemTranDauMoi.cshtml",
+              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\ThemTranDauMoi.cshtml",
+              "RelativeToolTip": "Views\\Home\\ThemTranDauMoi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T21:46:53.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGIAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-08T19:40:15.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CAC DANG HIEN THI.txt",
+              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\CAC DANG HIEN THI.txt",
+              "RelativeDocumentMoniker": "CAC DANG HIEN THI.txt",
+              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\CAC DANG HIEN THI.txt",
+              "RelativeToolTip": "CAC DANG HIEN THI.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-24T00:40:17.259Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "SuaTranDau.cshtml",
@@ -72,58 +148,21 @@
               "RelativeDocumentMoniker": "Views\\Home\\SuaTranDau.cshtml",
               "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\SuaTranDau.cshtml",
               "RelativeToolTip": "Views\\Home\\SuaTranDau.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-21T23:10:59.514Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAmwG0AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T20:26:01.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T19:40:19.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ThemTranDauMoi.cshtml",
-              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\ThemTranDauMoi.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ThemTranDauMoi.cshtml",
-              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Home\\ThemTranDauMoi.cshtml",
-              "RelativeToolTip": "Views\\Home\\ThemTranDauMoi.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAD4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T21:46:53.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAC8AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T19:40:15.295Z",
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "TRUYXUATCOSODULIEU.txt",
+              "DocumentMoniker": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\TRUYXUATCOSODULIEU.txt",
+              "RelativeDocumentMoniker": "TRUYXUATCOSODULIEU.txt",
+              "ToolTip": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KI\u1EC2M TRA GI\u1EEEA K\u00CC\\LUYETTAPTHEM\\Bay_LapTop\\TRUYXUATCOSODULIEU.txt",
+              "RelativeToolTip": "TRUYXUATCOSODULIEU.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-24T00:43:05.681Z"
             }
           ]
         }

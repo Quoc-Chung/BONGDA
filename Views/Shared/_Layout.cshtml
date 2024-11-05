@@ -104,15 +104,13 @@
                 type: 'GET',
                 success: function (data) {
                     console.log("Dữ liệu trả về:", data);  // Kiểm tra dữ liệu trả về từ API
-
                     var str = "";
-                    $.each(data, function (index, val) {
-                        var imageUrl = `/BONGDA/${val.anh}.jpg`;  // Tạo URL hình ảnh
+                    $.each(data, function (index, val) {                      
                         str += `
                                 <div class="col l-3 m-m-b-20 c-12">
                                     <div class="place__item">
                                         <div class="place__bg">
-                                            <img src="${imageUrl}" alt="" class="place__img">
+                                             <img src="../BONGDA/${val.anh}.jpg" alt="" class="place__img">
                                         </div>
                                         <div class="place__info" style="padding: 0; text-align:center">
                                             <header class="place__header">

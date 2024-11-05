@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JGMj+xWSSnrv+xz0Q7WANAc0EIrTXRP62a0E9Vp9y0s=",
+  "Hash": "qKRJ6kpdEdYHZPyo2PblBMjZS3j3uTEwFqGYLoPUUyw=",
   "Source": "Bay_LapTop",
   "BasePath": "_content/Bay_LapTop",
   "Mode": "Default",
@@ -7085,6 +7085,25 @@
       "OriginalItemSpec": "wwwroot\\BONGDA\\1350.jpeg"
     },
     {
+      "Identity": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KIỂM TRA GIỮA KÌ\\LUYETTAPTHEM\\Bay_LapTop\\wwwroot\\BONGDA\\1350425.png",
+      "SourceId": "Bay_LapTop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KIỂM TRA GIỮA KÌ\\LUYETTAPTHEM\\Bay_LapTop\\wwwroot\\",
+      "BasePath": "_content/Bay_LapTop",
+      "RelativePath": "BONGDA/1350425.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\BONGDA\\1350425.png"
+    },
+    {
       "Identity": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KIỂM TRA GIỮA KÌ\\LUYETTAPTHEM\\Bay_LapTop\\wwwroot\\BONGDA\\1351.jpeg",
       "SourceId": "Bay_LapTop",
       "SourceType": "Discovered",
@@ -9154,6 +9173,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\BONGDA\\1459.jpeg"
+    },
+    {
+      "Identity": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KIỂM TRA GIỮA KÌ\\LUYETTAPTHEM\\Bay_LapTop\\wwwroot\\BONGDA\\3157ef1314edadc1895a51730eb52d94",
+      "SourceId": "Bay_LapTop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KIỂM TRA GIỮA KÌ\\LUYETTAPTHEM\\Bay_LapTop\\wwwroot\\",
+      "BasePath": "_content/Bay_LapTop",
+      "RelativePath": "BONGDA/3157ef1314edadc1895a51730eb52d94",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\BONGDA\\3157ef1314edadc1895a51730eb52d94"
     },
     {
       "Identity": "D:\\KI_MOT_NAM_BA\\LAP_TRINH_WEB\\KIỂM TRA GIỮA KÌ\\LUYETTAPTHEM\\Bay_LapTop\\wwwroot\\BONGDA\\5001.jpeg",

@@ -53,11 +53,36 @@ namespace Bay_LapTop.Controllers
         [Route("ThemTranDauMoi")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult ThemTranDauMoi(Trandau TranDau)
+        public IActionResult ThemTranDauMoi(Trandau TranDau,IFormFile Anh)
         {
             /*- == true thì chứng tỏ dứ liệu truyền từ form vào hợp lệ -*/
             if (ModelState.IsValid)
             {
+
+                if (Anh != null && Anh.Length > 0)
+                {
+                    // Tạo đường dẫn lưu trữ tệp hình ảnh
+                    var fileName = Path.GetFileName(Anh.FileName);
+                    var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "BONGDA"); 
+                    var filePath = Path.Combine(uploadPath, fileName);
+
+
+                    // Kiểm tra thư mục lưu trữ, nếu không tồn tại thì tạo
+                    if (!Directory.Exists(uploadPath))
+                    {
+                        Directory.CreateDirectory(uploadPath);
+                    }
+
+                              // Lưu tệp hình ảnh
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        Anh.CopyTo(stream);
+                    }
+
+                    // Lưu tên hình ảnh vào cơ sở dữ liệu
+                    TranDau.Anh = fileName;
+                }
+
                 db.Add(TranDau);
                 db.SaveChanges();
                 return RedirectToAction("Index"); // Chuyển hướng về trang danh sách
@@ -102,25 +127,25 @@ namespace Bay_LapTop.Controllers
 
 
 
-
-
         /*- Xóa sách thì chúng ta sẽ phải cần mã sách -*/
         [Route("XoaTranDau")]
         [HttpGet]
         public IActionResult XoaTranDau(string trandauID)
         {
+            /* - Cái này lưu trữ danh sách trận đấu cần xóa -*/ 
             TempData["Message"] = "";
             var list_TranDau = db.Trandaus.ToList();
             ViewBag.TenCauThu = db.Cauthus.Take(7).ToList();
-            // Kiểm tra chi tiết sản phẩm trước khi xóa
-            var chiTietTranDauTonTai = db.TrandauGhibans.Any(x => x.TranDauId == trandauID);
-            if (chiTietTranDauTonTai)
+            
+            /* - Xóa bảng bên nhiều trước tiên -*/ 
+            var trandaughiban = db.TrandauGhibans.Where(x => x.TranDauId == trandauID);
+ 
+            if (trandaughiban.Any())
             {
-                TempData["Message"] = "Không xóa được sản phẩm này vì có chi tiết sản phẩm liên quan.";
-                return RedirectToAction("Index", "Home");
+                db.RemoveRange(trandaughiban);
             }
 
-            // Xóa các ảnh liên quan đến sản phẩm
+           /*- Tiếp theo chúng ta xóa bảng bên một -*/
             var trongtai_trandau = db.TrongtaiTrandaus.Where(x => x.TranDauId == trandauID);
             if (trongtai_trandau.Any())
             {
@@ -148,8 +173,5 @@ namespace Bay_LapTop.Controllers
 
             return RedirectToAction("Index", "Home");
         }
-
-
-
     }
 }
